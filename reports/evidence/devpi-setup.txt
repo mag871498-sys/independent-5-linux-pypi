@@ -1,0 +1,3 @@
+devpi ready: http://127.0.0.1:3141/student/lab/
+Public installation index: http://127.0.0.1:3141/student/lab/+simple/
+Credentials kept outside /work; no password in source or report.
