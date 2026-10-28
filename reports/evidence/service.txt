@@ -1,0 +1,25 @@
+● mytest.service - Minute heartbeat for the DevOps lab
+     Loaded: loaded (/etc/systemd/system/mytest.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2026-10-28 00:26:42 UTC; 12h ago
+   Main PID: 51 (heartbeat.sh)
+      Tasks: 2 (limit: 4699)
+     Memory: 556.0K
+        CPU: 1.498s
+     CGroup: /system.slice/mytest.service
+             ├─ 51 /bin/bash /opt/mytest/heartbeat.sh
+             └─613 sleep 60
+
+Oct 28 12:52:09 linux-lab heartbeat.sh[449]: 2026-10-28T12:52:09+00:00 mytest працює
+Oct 28 12:53:09 linux-lab heartbeat.sh[453]: 2026-10-28T12:53:09+00:00 mytest працює
+Oct 28 12:54:09 linux-lab heartbeat.sh[477]: 2026-10-28T12:54:09+00:00 mytest працює
+Oct 28 12:55:09 linux-lab heartbeat.sh[531]: 2026-10-28T12:55:09+00:00 mytest працює
+Oct 28 12:56:09 linux-lab heartbeat.sh[536]: 2026-10-28T12:56:09+00:00 mytest працює
+Oct 28 12:57:09 linux-lab heartbeat.sh[559]: 2026-10-28T12:57:09+00:00 mytest працює
+Oct 28 12:58:09 linux-lab heartbeat.sh[563]: 2026-10-28T12:58:09+00:00 mytest працює
+Oct 28 12:59:09 linux-lab heartbeat.sh[579]: 2026-10-28T12:59:09+00:00 mytest працює
+Oct 28 13:00:09 linux-lab heartbeat.sh[583]: 2026-10-28T13:00:09+00:00 mytest працює
+Oct 28 13:01:09 linux-lab heartbeat.sh[611]: 2026-10-28T13:01:09+00:00 mytest працює
+Oct 28 12:58:09 linux-lab heartbeat.sh[563]: 2026-10-28T12:58:09+00:00 mytest працює
+Oct 28 12:59:09 linux-lab heartbeat.sh[579]: 2026-10-28T12:59:09+00:00 mytest працює
+Oct 28 13:00:09 linux-lab heartbeat.sh[583]: 2026-10-28T13:00:09+00:00 mytest працює
+Oct 28 13:01:09 linux-lab heartbeat.sh[611]: 2026-10-28T13:01:09+00:00 mytest працює
