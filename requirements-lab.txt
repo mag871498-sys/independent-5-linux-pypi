@@ -1,0 +1,5 @@
+build==1.6.1
+twine==7.0.0
+devpi-server==6.21.0
+devpi-client==7.3.0
+molotov==2.6

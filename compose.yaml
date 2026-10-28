@@ -1,0 +1,20 @@
+name: independent-5-linux-pypi
+services:
+  linux:
+    build: .
+    image: independent-5-linux-pypi:local
+    container_name: independent-5-linux-pypi
+    hostname: linux-lab
+    privileged: true
+    cgroup: private
+    mem_limit: 1536m
+    tmpfs:
+      - /run
+      - /run/lock
+      - /tmp
+    volumes:
+      - .:/work
+    ports:
+      - "127.0.0.1:3141:3141"
+      - "127.0.0.1:8085:8085"
+    stop_signal: SIGRTMIN+3
