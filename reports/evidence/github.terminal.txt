@@ -1,0 +1,19 @@
+$ git remote -v
+origin	https://github.com/mag871498-sys/independent-5-linux-pypi.git (fetch)
+origin	https://github.com/mag871498-sys/independent-5-linux-pypi.git (push)
+$ git log --oneline -12
+695a129 (HEAD -> main, origin/main) chore: add plain evidence viewer and close temporary file descriptor
+b6dd1b7 test: run Molotov against real HTTP JSON endpoint
+bf871a7 docs: add release changelog and package format comparisons
+0de049f test: install package from devpi into fresh isolated environment
+63c84c9 feat: publish built artifacts to devpi through Twine
+d3aee73 feat: configure isolated local devpi index
+9a3fe98 feat: build version 0.1.0 as wheel and source distribution
+c21a1fa test: verify systemd heartbeat at sixty second intervals
+ace1a94 docs: record Linux block devices and partition table
+e5e5953 feat: measure virtual disk IOPS with iostat
+dfcc696 docs: collect system and SSH journal records
+c03753a chore: prepare Linux laboratory with real systemd
+$ git branch --show-current
+main
+$

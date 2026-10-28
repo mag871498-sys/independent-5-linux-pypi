@@ -1,0 +1,16 @@
+$ bash scripts/linux.sh ps -p 1 -o comm=
+systemd
+$ bash scripts/linux.sh journalctl -n 10 --no-pager -o short-iso
+2026-10-28T13:06:58+0000 linux-lab systemd[1]: Started json-server.service - JSON endpoint for the Molotov lab.
+2026-10-28T13:06:59+0000 linux-lab python[1783]: JSON server http://0.0.0.0:8085/
+2026-10-28T13:07:10+0000 linux-lab heartbeat.sh[1793]: 2026-10-28T13:07:10+00:00 mytest працює
+2026-10-28T13:08:10+0000 linux-lab heartbeat.sh[1797]: 2026-10-28T13:08:10+00:00 mytest працює
+2026-10-28T13:09:10+0000 linux-lab heartbeat.sh[1801]: 2026-10-28T13:09:10+00:00 mytest працює
+2026-10-28T13:10:10+0000 linux-lab heartbeat.sh[1805]: 2026-10-28T13:10:10+00:00 mytest працює
+2026-10-28T13:10:14+0000 linux-lab systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+2026-10-28T13:10:14+0000 linux-lab systemd[1]: sysstat-collect.service: Deactivated successfully.
+2026-10-28T13:10:14+0000 linux-lab systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+2026-10-28T13:11:10+0000 linux-lab heartbeat.sh[1811]: 2026-10-28T13:11:10+00:00 mytest працює
+$ wc -l logs.txt
+      10 logs.txt
+$

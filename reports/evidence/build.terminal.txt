@@ -1,0 +1,14 @@
+$ cat scripts/build_package.sh
+#!/bin/bash
+set -euo pipefail
+cd -- "$(dirname -- "$0")/.."
+export NO_COLOR=1
+python -m build
+python -m twine check dist/*
+$ python3 scripts/show_evidence.py reports/evidence/build.txt --tail 3
+Successfully built study5_hello_lab-0.1.0.tar.gz and study5_hello_lab-0.1.0-py3-none-any.whl
+Checking dist/study5_hello_lab-0.1.0-py3-none-any.whl: PASSED
+Checking dist/study5_hello_lab-0.1.0.tar.gz: PASSED
+$ ls dist/
+study5_hello_lab-0.1.0-py3-none-any.whl	study5_hello_lab-0.1.0.tar.gz
+$

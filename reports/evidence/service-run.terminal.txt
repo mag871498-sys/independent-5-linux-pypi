@@ -1,0 +1,21 @@
+$ bash scripts/linux.sh systemctl status mytest.service --no-pager -n 2
+● mytest.service - Minute heartbeat for the DevOps lab
+     Loaded: loaded (/etc/systemd/system/mytest.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2026-10-28 00:26:42 UTC; 12h ago
+   Main PID: 51 (heartbeat.sh)
+      Tasks: 2 (limit: 4699)
+     Memory: 552.0K
+        CPU: 1.838s
+     CGroup: /system.slice/mytest.service
+             ├─  51 /bin/bash /opt/mytest/heartbeat.sh
+             └─1835 sleep 60
+
+Oct 28 13:11:10 linux-lab heartbeat.sh[1811]: 2026-10-28T13:11:10+00:00 mytest працює
+Oct 28 13:12:10 linux-lab heartbeat.sh[1833]: 2026-10-28T13:12:10+00:00 mytest працює
+$ bash scripts/linux.sh journalctl -u mytest.service -n 2 --no-pager
+Oct 28 13:11:10 linux-lab heartbeat.sh[1811]: 2026-10-28T13:11:10+00:00 mytest працює
+Oct 28 13:12:10 linux-lab heartbeat.sh[1833]: 2026-10-28T13:12:10+00:00 mytest працює
+$ bash scripts/linux.sh tail -n 2 /tmp/test.log
+2026-10-28T13:11:10+00:00 mytest працює
+2026-10-28T13:12:10+00:00 mytest працює
+$

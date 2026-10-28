@@ -1,0 +1,24 @@
+$ cat pyproject.toml src/study5_hello/__init__.py
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "study5-hello-lab"
+version = "0.1.0"
+description = "Навчальний Python-пакет для локального devpi"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Student"}]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+"""Мінімальний пакет для перевірки складання та встановлення."""
+
+__version__ = "0.1.0"
+
+
+def hello() -> str:
+    """Повернути привітання."""
+    return "Hello, DevOps!"
+$

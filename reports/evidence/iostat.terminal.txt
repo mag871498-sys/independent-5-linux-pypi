@@ -1,0 +1,15 @@
+$ cat reports/evidence/iostat.txt
+Linux 6.12.76-linuxkit (linux-lab) 	10/28/26 	_aarch64_	(8 CPU)
+
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+vda              65.00         0.00     32828.00     16384.00          0      32828      16384
+
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+vda              63.37         0.00     32491.09     72998.02          0      32816      73728
+
+
+$ cat reports/evidence/io-summary.txt
+vda: tps (observed IOPS) = 63.37; read kB/s = 0.00; write kB/s = 32491.09
+$

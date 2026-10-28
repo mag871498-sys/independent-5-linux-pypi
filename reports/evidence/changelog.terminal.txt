@@ -1,0 +1,19 @@
+$ cat CHANGELOG.md
+# Changelog
+
+## [0.1.0] - 2026-10-28
+
+### Added
+
+- Функція `study5_hello.hello()` і запуск `python -m study5_hello`.
+- Складання пакета у форматах wheel та sdist через `pyproject.toml`.
+- Сценарій Molotov для перевірки HTTP 200 та JSON-відповіді.
+
+### Fixed
+
+- Початкова версія; виправлень ще немає.
+
+### Security
+
+- Змін безпеки у цій версії немає.
+$

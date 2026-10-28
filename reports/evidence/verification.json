@@ -1,0 +1,17 @@
+{
+  "devpi_index": "http://127.0.0.1:3141/student/lab",
+  "bases": [],
+  "artifact_sha256": {
+    "study5_hello_lab-0.1.0-py3-none-any.whl": "356a2889bff835eaf4fc5788fb1160c390f3a2c203157e5f0132820e0d06a636",
+    "study5_hello_lab-0.1.0.tar.gz": "b19fa3f886be86d1a3e52b2540437837595060b82e1ce52ecd9c938e4c581e68"
+  },
+  "installed": {
+    "version": "0.1.0",
+    "module": "/opt/study5-verify/lib/python3.11/site-packages/study5_hello/__init__.py",
+    "hello": "Hello, DevOps!"
+  },
+  "molotov": {
+    "successes": 100,
+    "failures": 0
+  }
+}

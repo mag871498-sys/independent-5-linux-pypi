@@ -1,0 +1,7 @@
+$ bash scripts/linux.sh systemctl is-active devpi.service
+active
+$ cat reports/evidence/upload.txt
+Uploading distributions to http://127.0.0.1:3141/student/lab/
+Uploading study5_hello_lab-0.1.0-py3-none-any.whl
+Uploading study5_hello_lab-0.1.0.tar.gz
+$

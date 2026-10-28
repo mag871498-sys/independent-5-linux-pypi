@@ -1,0 +1,23 @@
+$ cat linux/mytest.service linux/heartbeat.sh
+[Unit]
+Description=Minute heartbeat for the DevOps lab
+After=systemd-journald.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/mytest
+ExecStart=/opt/mytest/heartbeat.sh
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+#!/bin/bash
+set -euo pipefail
+while true; do
+    printf '%s mytest працює\n' "$(date --iso-8601=seconds)" | tee -a /tmp/test.log
+    sleep 60
+done
+$

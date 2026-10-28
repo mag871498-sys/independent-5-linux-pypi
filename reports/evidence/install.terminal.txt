@@ -1,0 +1,11 @@
+$ cat reports/evidence/install.txt
+Looking in indexes: http://127.0.0.1:3141/student/lab/+simple/
+Collecting study5-hello-lab==0.1.0
+  Downloading http://127.0.0.1:3141/student/lab/%2Bf/356/a2889bff835ea/study5_hello_lab-0.1.0-py3-none-any.whl (2.2 kB)
+Installing collected packages: study5-hello-lab
+Successfully installed study5-hello-lab-0.1.0
+Version: 0.1.0
+Hello, DevOps!
+$ bash scripts/linux.sh /opt/study5-verify/bin/python -I -m study5_hello
+Hello, DevOps!
+$

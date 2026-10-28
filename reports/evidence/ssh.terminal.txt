@@ -1,0 +1,8 @@
+$ bash scripts/linux.sh journalctl -u ssh.service --no-pager
+Oct 28 00:26:42 linux-lab systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Oct 28 00:26:42 linux-lab sshd[63]: Server listening on 0.0.0.0 port 22.
+Oct 28 00:26:42 linux-lab sshd[63]: Server listening on :: port 22.
+Oct 28 00:26:42 linux-lab systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+$ wc -l sshd-logs.txt
+       4 sshd-logs.txt
+$

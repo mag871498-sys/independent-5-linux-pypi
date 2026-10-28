@@ -1,0 +1,184 @@
+[
+  {
+    "name": "journal",
+    "source": "macOS Terminal screenshot",
+    "commands": [
+      "bash scripts/linux.sh ps -p 1 -o comm=",
+      "bash scripts/linux.sh journalctl -n 10 --no-pager -o short-iso",
+      "wc -l logs.txt"
+    ],
+    "size": [
+      2334,
+      624
+    ],
+    "title_bar_removed": true
+  },
+  {
+    "name": "ssh",
+    "source": "macOS Terminal screenshot",
+    "commands": [
+      "bash scripts/linux.sh journalctl -u ssh.service --no-pager",
+      "wc -l sshd-logs.txt"
+    ],
+    "size": [
+      2197,
+      398
+    ],
+    "title_bar_removed": true
+  },
+  {
+    "name": "iostat",
+    "source": "macOS Terminal screenshot",
+    "commands": [
+      "cat reports/evidence/iostat.txt",
+      "cat reports/evidence/io-summary.txt"
+    ],
+    "size": [
+      1900,
+      586
+    ],
+    "title_bar_removed": true
+  },
+  {
+    "name": "disks",
+    "source": "macOS Terminal screenshot",
+    "commands": [
+      "cat reports/evidence/disks.txt",
+      "cat reports/evidence/fdisk.txt"
+    ],
+    "size": [
+      1294,
+      806
+    ],
+    "title_bar_removed": true
+  },
+  {
+    "name": "unit-code",
+    "source": "macOS Terminal screenshot",
+    "commands": [
+      "cat linux/mytest.service linux/heartbeat.sh"
+    ],
+    "size": [
+      2011,
+      1118
+    ],
+    "title_bar_removed": true
+  },
+  {
+    "name": "service-run",
+    "source": "macOS Terminal screenshot",
+    "commands": [
+      "bash scripts/linux.sh systemctl status mytest.service --no-pager -n 2",
+      "bash scripts/linux.sh journalctl -u mytest.service -n 2 --no-pager",
+      "bash scripts/linux.sh tail -n 2 /tmp/test.log"
+    ],
+    "size": [
+      1719,
+      814
+    ],
+    "title_bar_removed": true
+  },
+  {
+    "name": "package-code",
+    "source": "macOS Terminal screenshot",
+    "commands": [
+      "cat pyproject.toml src/study5_hello/__init__.py"
+    ],
+    "size": [
+      1553,
+      1166
+    ],
+    "title_bar_removed": true
+  },
+  {
+    "name": "build",
+    "source": "macOS Terminal screenshot",
+    "commands": [
+      "cat scripts/build_package.sh",
+      "python3 scripts/show_evidence.py reports/evidence/build.txt --tail 3",
+      "ls dist/"
+    ],
+    "size": [
+      2228,
+      686
+    ],
+    "title_bar_removed": true
+  },
+  {
+    "name": "upload",
+    "source": "macOS Terminal screenshot",
+    "commands": [
+      "bash scripts/linux.sh systemctl is-active devpi.service",
+      "cat reports/evidence/upload.txt"
+    ],
+    "size": [
+      1483,
+      350
+    ],
+    "title_bar_removed": true
+  },
+  {
+    "name": "install",
+    "source": "macOS Terminal screenshot",
+    "commands": [
+      "cat reports/evidence/install.txt",
+      "bash scripts/linux.sh /opt/study5-verify/bin/python -I -m study5_hello"
+    ],
+    "size": [
+      2472,
+      590
+    ],
+    "title_bar_removed": true
+  },
+  {
+    "name": "changelog",
+    "source": "macOS Terminal screenshot",
+    "commands": [
+      "cat CHANGELOG.md"
+    ],
+    "size": [
+      1780,
+      1038
+    ],
+    "title_bar_removed": true
+  },
+  {
+    "name": "load-code",
+    "source": "macOS Terminal screenshot",
+    "commands": [
+      "cat loadtest.py scripts/load_test.sh"
+    ],
+    "size": [
+      1837,
+      1070
+    ],
+    "title_bar_removed": true
+  },
+  {
+    "name": "load-run",
+    "source": "macOS Terminal screenshot",
+    "commands": [
+      "python3 scripts/show_evidence.py reports/evidence/molotov.txt --tail 6",
+      "bash scripts/linux.sh curl -s -i -w '\\n' http://127.0.0.1:8085/"
+    ],
+    "size": [
+      909,
+      409
+    ],
+    "title_bar_removed": true
+  },
+  {
+    "name": "github",
+    "source": "macOS Terminal screenshot",
+    "commands": [
+      "git remote -v",
+      "git log --oneline -12",
+      "git branch --show-current"
+    ],
+    "size": [
+      1195,
+      444
+    ],
+    "title_bar_removed": true
+  }
+]
