@@ -1,0 +1,12 @@
+[Unit]
+Description=JSON endpoint for the Molotov lab
+After=network.target
+
+[Service]
+WorkingDirectory=/work
+ExecStart=/opt/lab-venv/bin/python /work/scripts/json_server.py --host 0.0.0.0 --port 8085
+Restart=on-failure
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

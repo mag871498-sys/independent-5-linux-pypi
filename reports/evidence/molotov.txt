@@ -1,0 +1,19 @@
+Preparing 2 workers...
+OK
+[W:0] Starting
+[W:1] Starting
+[W:0] Setting up session
+[W:1] Setting up session
+[W:0] Running scenarios
+[W:1] Running scenarios
+[W:1] Ran 10 scenarios
+[W:0] Ran 10 scenarios
+[W:0] Ran 20 scenarios
+[W:1] Ran 20 scenarios
+[W:1] Ran 30 scenarios
+[W:0] Ran 30 scenarios
+[W:0] Ran 40 scenarios
+[W:1] Ran 40 scenarios
+**** Molotov v2.6. Happy breaking! ****
+SUCCESSES: 100 | FAILURES: 0
+*** Bye ***
