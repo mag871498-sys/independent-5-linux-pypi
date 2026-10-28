@@ -1,11 +1,14 @@
 """Bounded I/O sample on the Docker VM disk; keep the actual iostat output."""
 from pathlib import Path
+import os
 import subprocess
 import tempfile
 import threading
 import time
 
-path = Path(tempfile.mkstemp(prefix="study5-io-", dir="/var/tmp")[1])
+descriptor, filename = tempfile.mkstemp(prefix="study5-io-", dir="/var/tmp")
+os.close(descriptor)
+path = Path(filename)
 
 
 def write_sample():
