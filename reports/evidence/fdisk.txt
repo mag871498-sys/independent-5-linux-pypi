@@ -1,0 +1,9 @@
+Disk /dev/vda: 40 GiB, 42949672960 bytes, 83886080 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x8d4cd9a4
+
+Device     Boot Start      End  Sectors Size Id Type
+/dev/vda1        2048 83886079 83884032  40G 83 Linux

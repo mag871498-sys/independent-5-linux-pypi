@@ -1,0 +1,6 @@
+NAME     SIZE TYPE MOUNTPOINTS
+vda       40G disk 
+└─vda1    40G part /etc/hosts
+                   /etc/hostname
+                   /etc/resolv.conf
+vdb    623.3M disk 
