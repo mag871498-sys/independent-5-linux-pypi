@@ -1,0 +1,91 @@
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools>=69
+  - wheel
+* Getting build dependencies for sdist...
+running egg_info
+creating src/study5_hello_lab.egg-info
+writing src/study5_hello_lab.egg-info/PKG-INFO
+writing dependency_links to src/study5_hello_lab.egg-info/dependency_links.txt
+writing top-level names to src/study5_hello_lab.egg-info/top_level.txt
+writing manifest file 'src/study5_hello_lab.egg-info/SOURCES.txt'
+reading manifest file 'src/study5_hello_lab.egg-info/SOURCES.txt'
+writing manifest file 'src/study5_hello_lab.egg-info/SOURCES.txt'
+* Installed build dependency versions:
+  - setuptools==84.2.1
+  - wheel==0.48.0
+* Building sdist...
+running sdist
+running egg_info
+writing src/study5_hello_lab.egg-info/PKG-INFO
+writing dependency_links to src/study5_hello_lab.egg-info/dependency_links.txt
+writing top-level names to src/study5_hello_lab.egg-info/top_level.txt
+reading manifest file 'src/study5_hello_lab.egg-info/SOURCES.txt'
+writing manifest file 'src/study5_hello_lab.egg-info/SOURCES.txt'
+running check
+creating study5_hello_lab-0.1.0
+creating study5_hello_lab-0.1.0/src/study5_hello
+creating study5_hello_lab-0.1.0/src/study5_hello_lab.egg-info
+copying files to study5_hello_lab-0.1.0...
+copying README.md -> study5_hello_lab-0.1.0
+copying pyproject.toml -> study5_hello_lab-0.1.0
+copying src/study5_hello/__init__.py -> study5_hello_lab-0.1.0/src/study5_hello
+copying src/study5_hello/__main__.py -> study5_hello_lab-0.1.0/src/study5_hello
+copying src/study5_hello_lab.egg-info/PKG-INFO -> study5_hello_lab-0.1.0/src/study5_hello_lab.egg-info
+copying src/study5_hello_lab.egg-info/SOURCES.txt -> study5_hello_lab-0.1.0/src/study5_hello_lab.egg-info
+copying src/study5_hello_lab.egg-info/dependency_links.txt -> study5_hello_lab-0.1.0/src/study5_hello_lab.egg-info
+copying src/study5_hello_lab.egg-info/top_level.txt -> study5_hello_lab-0.1.0/src/study5_hello_lab.egg-info
+copying src/study5_hello_lab.egg-info/SOURCES.txt -> study5_hello_lab-0.1.0/src/study5_hello_lab.egg-info
+Writing study5_hello_lab-0.1.0/setup.cfg
+Creating tar archive
+removing 'study5_hello_lab-0.1.0' (and everything under it)
+* Building wheel from sdist
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools>=69
+  - wheel
+* Getting build dependencies for wheel...
+running egg_info
+writing src/study5_hello_lab.egg-info/PKG-INFO
+writing dependency_links to src/study5_hello_lab.egg-info/dependency_links.txt
+writing top-level names to src/study5_hello_lab.egg-info/top_level.txt
+reading manifest file 'src/study5_hello_lab.egg-info/SOURCES.txt'
+writing manifest file 'src/study5_hello_lab.egg-info/SOURCES.txt'
+* Installed build dependency versions:
+  - setuptools==84.2.1
+  - wheel==0.48.0
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build/lib/study5_hello
+copying src/study5_hello/__main__.py -> build/lib/study5_hello
+copying src/study5_hello/__init__.py -> build/lib/study5_hello
+running egg_info
+writing src/study5_hello_lab.egg-info/PKG-INFO
+writing dependency_links to src/study5_hello_lab.egg-info/dependency_links.txt
+writing top-level names to src/study5_hello_lab.egg-info/top_level.txt
+reading manifest file 'src/study5_hello_lab.egg-info/SOURCES.txt'
+writing manifest file 'src/study5_hello_lab.egg-info/SOURCES.txt'
+installing to build/bdist.linux-aarch64/wheel
+running install
+running install_lib
+creating build/bdist.linux-aarch64/wheel
+creating build/bdist.linux-aarch64/wheel/study5_hello
+copying build/lib/study5_hello/__init__.py -> build/bdist.linux-aarch64/wheel/./study5_hello
+copying build/lib/study5_hello/__main__.py -> build/bdist.linux-aarch64/wheel/./study5_hello
+running install_egg_info
+Copying src/study5_hello_lab.egg-info to build/bdist.linux-aarch64/wheel/./study5_hello_lab-0.1.0-py3.11.egg-info
+running install_scripts
+creating build/bdist.linux-aarch64/wheel/study5_hello_lab-0.1.0.dist-info/WHEEL
+creating '/work/dist/.tmp-upkq3mn1/study5_hello_lab-0.1.0-py3-none-any.whl' and adding 'build/bdist.linux-aarch64/wheel' to it
+adding 'study5_hello/__init__.py'
+adding 'study5_hello/__main__.py'
+adding 'study5_hello_lab-0.1.0.dist-info/METADATA'
+adding 'study5_hello_lab-0.1.0.dist-info/WHEEL'
+adding 'study5_hello_lab-0.1.0.dist-info/top_level.txt'
+adding 'study5_hello_lab-0.1.0.dist-info/RECORD'
+removing build/bdist.linux-aarch64/wheel
+Successfully built study5_hello_lab-0.1.0.tar.gz and study5_hello_lab-0.1.0-py3-none-any.whl
+Checking dist/study5_hello_lab-0.1.0-py3-none-any.whl: [32mPASSED[0m
+Checking dist/study5_hello_lab-0.1.0.tar.gz: [32mPASSED[0m
