@@ -109,7 +109,7 @@ COMPARISON = [
 
 
 def markdown_source():
-    lines = ["# Самостійна робота №5", "", "# Linux та локальний PyPI", "", CONTEXT, ""]
+    lines = ["# Самостійна робота 4 (№2)", "", "# Linux та локальний PyPI", "", CONTEXT, ""]
     for page in PAGES:
         lines.extend(["## " + page["heading"], ""])
         for value in page.get("before", []):
@@ -165,7 +165,7 @@ def build_report():
         ]))
         story.extend([KeepTogether([table, Spacer(1, 10)])])
 
-    text("Самостійна робота №5", "title")
+    text("Самостійна робота 4 (№2)", "title")
     text("Linux та локальний PyPI", "title")
     text(CONTEXT, "body")
     for index, page in enumerate(PAGES):
@@ -182,13 +182,13 @@ def build_report():
             text(value, "body")
 
     OUTPUT.mkdir(parents=True, exist_ok=True)
-    pdf = OUTPUT / "Самостійна_робота_5.pdf"
+    pdf = OUTPUT / "Самостійна_робота_4_№2.pdf"
     SimpleDocTemplate(
         str(pdf), pagesize=A4,
         leftMargin=72, rightMargin=72, topMargin=72, bottomMargin=72,
-        title="Самостійна робота №5. Linux та локальний PyPI", author="", pageCompression=1,
+        title="Самостійна робота 4 (№2). Linux та локальний PyPI", author="", pageCompression=1,
     ).build(story)
-    (REPORTS / "Самостійна_робота_5.md").write_text(markdown_source(), encoding="utf-8")
+    (REPORTS / "Самостійна_робота_4_№2.md").write_text(markdown_source(), encoding="utf-8")
     print(pdf)
 
 
